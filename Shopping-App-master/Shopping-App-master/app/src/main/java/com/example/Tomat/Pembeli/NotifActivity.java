@@ -18,7 +18,7 @@ public class NotifActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_notification);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
