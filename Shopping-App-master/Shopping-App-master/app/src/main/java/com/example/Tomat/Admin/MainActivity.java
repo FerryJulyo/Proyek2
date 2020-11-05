@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_admin_home);
 
         Button btn = (Button) findViewById(R.id.button2);
         ton3 = (Button) findViewById(R.id.button3);
