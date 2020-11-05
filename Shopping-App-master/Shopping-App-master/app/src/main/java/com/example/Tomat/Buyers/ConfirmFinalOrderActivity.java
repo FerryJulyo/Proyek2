@@ -54,33 +54,34 @@ public class ConfirmFinalOrderActivity extends AppCompatActivity {
             Toast.makeText(this, "Please Enter Your Phone ", Toast.LENGTH_LONG).show();
         } else if (TextUtils.isEmpty(cityET.getText().toString())) {
             Toast.makeText(this, "Please Enter Your City ", Toast.LENGTH_LONG).show();
-        } else if (TextUtils.isEmpty(addressET.getText().toString())) {
+        } else (TextUtils.isEmpty(addressET.getText().toString())) {
             Toast.makeText(this, "Please Enter Your Address ", Toast.LENGTH_LONG).show();
-        } else {
-            confirmOrder();
         }
+//        } else {
+//            confirmOrder();
+//        }
     }
 
-    private void confirmOrder() {
-        final String saveCurrentDate, saveCurrentTime;
-        Calendar calForDate = Calendar.getInstance();
-        SimpleDateFormat currentDate = new SimpleDateFormat("MMM DD, YYYY");
-        saveCurrentDate = currentDate.format(calForDate.getTime());
-        SimpleDateFormat currentTime = new SimpleDateFormat("HH:mm:ss a");
-        saveCurrentTime = currentTime.format(calForDate.getTime());
-
-
-        HashMap<String, Object> orderMap = new HashMap<>();
-        orderMap.put("totalAmount", totalAmount);
-        orderMap.put("name", nameET.getText().toString());
-        orderMap.put("phone", phoneET.getText().toString());
-        orderMap.put("date", saveCurrentDate);
-        orderMap.put("time", saveCurrentTime);
-        orderMap.put("city", cityET.getText().toString());
-        orderMap.put("address", addressET.getText().toString());
-        orderMap.put("state", "not shiped");
-
-
-
-    }
+//    private void confirmOrder() {
+//        final String saveCurrentDate, saveCurrentTime;
+//        Calendar calForDate = Calendar.getInstance();
+//        SimpleDateFormat currentDate = new SimpleDateFormat("MMM DD, YYYY");
+//        saveCurrentDate = currentDate.format(calForDate.getTime());
+//        SimpleDateFormat currentTime = new SimpleDateFormat("HH:mm:ss a");
+//        saveCurrentTime = currentTime.format(calForDate.getTime());
+//
+//
+//        HashMap<String, Object> orderMap = new HashMap<>();
+//        orderMap.put("totalAmount", totalAmount);
+//        orderMap.put("name", nameET.getText().toString());
+//        orderMap.put("phone", phoneET.getText().toString());
+//        orderMap.put("date", saveCurrentDate);
+//        orderMap.put("time", saveCurrentTime);
+//        orderMap.put("city", cityET.getText().toString());
+//        orderMap.put("address", addressET.getText().toString());
+//        orderMap.put("state", "not shiped");
+//
+//
+//
+//    }
 }
