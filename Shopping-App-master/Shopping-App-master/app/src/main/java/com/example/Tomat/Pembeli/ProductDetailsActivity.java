@@ -1,4 +1,4 @@
-package com.example.Tomat.Buyers;
+package com.example.Tomat.Pembeli;
 
 import androidx.appcompat.app.AppCompatActivity;
 

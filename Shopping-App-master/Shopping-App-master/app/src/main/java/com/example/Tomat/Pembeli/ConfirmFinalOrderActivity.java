@@ -1,4 +1,4 @@
-package com.example.Tomat.Buyers;
+package com.example.Tomat.Pembeli;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,11 +11,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.Tomat.R;
-
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.HashMap;
 
 public class ConfirmFinalOrderActivity extends AppCompatActivity {
     private EditText nameET, phoneET, addressET, cityET;

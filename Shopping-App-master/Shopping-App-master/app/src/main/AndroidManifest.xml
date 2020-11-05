@@ -18,19 +18,19 @@
         <activity android:name=".Sellers.SellerLoginActivity" />
         <activity android:name=".Sellers.SellerRegestrationActivity" />
         <activity android:name="com.example.Tomat.Admin.AdminMaintainProductActivity" />
-        <activity android:name="com.example.Tomat.Buyers.SearchProductActivity" />
+        <activity android:name="com.example.Tomat.Pembeli.SearchProductActivity" />
         <activity android:name="com.example.Tomat.Admin.AdminUserProductActivity" />
         <activity android:name="com.example.Tomat.Admin.AdminNewOrdersActivity" />
-        <activity android:name="com.example.Tomat.Buyers.ConfirmFinalOrderActivity" />
-        <activity android:name="com.example.Tomat.Buyers.CartActivity" />
-        <activity android:name="com.example.Tomat.Buyers.ProductDetailsActivity" />
+        <activity android:name="com.example.Tomat.Pembeli.ConfirmFinalOrderActivity" />
+        <activity android:name="com.example.Tomat.Pembeli.CartActivity" />
+        <activity android:name="com.example.Tomat.Pembeli.ProductDetailsActivity" />
         <activity
-            android:name="com.example.Tomat.Buyers.HomeActivity"
+            android:name="com.example.Tomat.Pembeli.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Sellers.SellerProductCategoryActivity" />
         <activity android:name=".Sellers.SellerAddNewProductActivity" />
-        <activity android:name="com.example.Tomat.Buyers.MainActivity">
+        <activity android:name="com.example.Tomat.Pembeli.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

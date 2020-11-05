@@ -1,4 +1,4 @@
-package com.example.Tomat.Buyers;
+package com.example.Tomat.Pembeli;
 
 import android.content.Intent;
 import android.os.Bundle;
