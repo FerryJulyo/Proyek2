@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:gravity="center_horizontal"
-            android:text="Total  Price = "
+            android:text="Total Harga = "
             android:textAlignment="center"
             android:textColor="#FFFF"
             android:textSize="22sp" />
