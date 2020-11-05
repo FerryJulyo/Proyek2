@@ -37,10 +37,7 @@ public class ConfirmFinalOrderActivity extends AppCompatActivity {
         confirmOrderbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent notif = new Intent(ConfirmFinalOrderActivity.this, NotifActivity.class);
                 check();
-                startActivity(notif);
-                finish();
             }
         });
 
@@ -54,12 +51,14 @@ public class ConfirmFinalOrderActivity extends AppCompatActivity {
             Toast.makeText(this, "Please Enter Your Phone ", Toast.LENGTH_LONG).show();
         } else if (TextUtils.isEmpty(cityET.getText().toString())) {
             Toast.makeText(this, "Please Enter Your City ", Toast.LENGTH_LONG).show();
-        } else (TextUtils.isEmpty(addressET.getText().toString())) {
+        } else if (TextUtils.isEmpty(addressET.getText().toString())) {
             Toast.makeText(this, "Please Enter Your Address ", Toast.LENGTH_LONG).show();
-        }
-//        } else {
+        } else {
 //            confirmOrder();
-//        }
+            Intent notif = new Intent(ConfirmFinalOrderActivity.this, NotifActivity.class);
+            startActivity(notif);
+            finish();
+        }
     }
 
 //    private void confirmOrder() {
