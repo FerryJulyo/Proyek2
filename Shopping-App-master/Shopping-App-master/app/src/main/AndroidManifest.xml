@@ -10,17 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.Tomat.Admin.AdminCheckNewProductsActivity"></activity>
-        <activity android:name="com.example.Tomat.Admin.AdminHomeActivity" />
-        <activity
-            android:name=".Sellers.SellerHomeActivity"
-            android:label="@string/title_activity_seller_home" />
-        <activity android:name=".Sellers.SellerLoginActivity" />
-        <activity android:name=".Sellers.SellerRegestrationActivity" />
-        <activity android:name="com.example.Tomat.Admin.AdminMaintainProductActivity" />
+
         <activity android:name="com.example.Tomat.Pembeli.SearchProductActivity" />
-        <activity android:name="com.example.Tomat.Admin.AdminUserProductActivity" />
-        <activity android:name="com.example.Tomat.Admin.AdminNewOrdersActivity" />
         <activity android:name="com.example.Tomat.Pembeli.ConfirmFinalOrderActivity" />
         <activity android:name="com.example.Tomat.Pembeli.CartActivity" />
         <activity android:name="com.example.Tomat.Pembeli.ProductDetailsActivity" />
@@ -28,9 +19,16 @@
             android:name="com.example.Tomat.Pembeli.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Sellers.SellerProductCategoryActivity" />
-        <activity android:name=".Sellers.SellerAddNewProductActivity" />
         <activity android:name="com.example.Tomat.Pembeli.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.Tomat.Admin.DetailBarang"></activity>
+        <activity android:name="com.example.Tomat.Admin.UpdateBarang" />
+        <activity android:name="com.example.Tomat.Admin.TambahBarang" />
+        <activity android:name="com.example.Tomat.Admin.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
