@@ -13,7 +13,7 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="10dp"
         android:background="@color/colorPrimaryDark"
-        android:text="Next.."
+        android:text="Beli.."
         android:textColor="#FFFF"
         android:textSize="22sp" />
 

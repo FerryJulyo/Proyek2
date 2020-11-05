@@ -25,7 +25,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
-        android:hint="Your Phone Number"
+        android:hint="Nomor Telepon"
         android:inputType="number" />
 
     <EditText
@@ -36,17 +36,17 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
-        android:hint="Your Address" />
+        android:hint="Alamat" />
 
     <EditText
         android:id="@+id/shipment_city"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:layout_below="@+id/shipment_address"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
-        android:hint="Your City" />
+        android:hint="Pesan" />
 
     <EditText
         android:id="@+id/shipment_name"
@@ -56,7 +56,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="70dp"
         android:layout_marginRight="20dp"
-        android:hint="Your Name" />
+        android:hint="Nama" />
 
     <TextView
         android:id="@+id/txt"
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:gravity="center_horizontal"
-        android:text="Confirm Your Details  "
+        android:text="Masukkan Data Diri Anda  "
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="27dp"

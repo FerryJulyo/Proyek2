@@ -26,7 +26,7 @@ public class ConfirmFinalOrderActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        totalAmount = getIntent().getStringExtra("Total Price");
+        totalAmount = getIntent().getStringExtra("Total Harga");
 
         setContentView(R.layout.activity_confirm_final_order);
         confirmOrderbtn = findViewById(R.id.confirm_order_btn);
@@ -46,19 +46,21 @@ public class ConfirmFinalOrderActivity extends AppCompatActivity {
 
     private void check() {
         if (TextUtils.isEmpty(nameET.getText().toString())) {
-            Toast.makeText(this, "Please Enter Your Name ", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Tolong Masukkan nama... ", Toast.LENGTH_LONG).show();
         } else if (TextUtils.isEmpty(phoneET.getText().toString())) {
-            Toast.makeText(this, "Please Enter Your Phone ", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Tolong masukkan nomor telepon... ", Toast.LENGTH_LONG).show();
         } else if (TextUtils.isEmpty(cityET.getText().toString())) {
-            Toast.makeText(this, "Please Enter Your City ", Toast.LENGTH_LONG).show();
-        } else if (TextUtils.isEmpty(addressET.getText().toString())) {
-            Toast.makeText(this, "Please Enter Your Address ", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Tolong masukkan alamat... ", Toast.LENGTH_LONG).show();
+//        } else if (TextUtils.isEmpty(addressET.getText().toString())) {
+//            Toast.makeText(this, "Please Enter Your Address ", Toast.LENGTH_LONG).show();
         } else {
-//            confirmOrder();
-            Intent notif = new Intent(ConfirmFinalOrderActivity.this, NotifActivity.class);
-            startActivity(notif);
-            finish();
+            confirm();
         }
+    }
+
+    private void confirm() {
+        Intent notif = new Intent(ConfirmFinalOrderActivity.this, NotifActivity.class);
+        startActivity(notif);
     }
 
 //    private void confirmOrder() {
