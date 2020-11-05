@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:gravity="center_horizontal"
-        android:text="Order Successful"
+        android:text="Pemesanan Berhasil"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="27dp"
@@ -27,7 +27,7 @@
         android:layout_marginTop="210dp"
         android:layout_below="@id/txt"
         android:gravity="center_horizontal"
-        android:text="order successful, thank you for making a transaction with us, the admin will check your order and contact you in a few moments"
+        android:text="Pemesanan berhasil dibuat, admin akan segera menghubungi anda untuk melanjutkan proses transaksi, terima kasih telah melakukan transaksi dengan toko kami..."
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="15dp"/>
