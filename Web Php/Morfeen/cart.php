@@ -256,7 +256,7 @@ foreach ($cart1 as $s)
           <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Tentang Kami :</h3>
               <ul class="list-unstyled">
-                <li class="address">Jl. Swari Selatan No. 07, Sukun, Kota Malang, Jawa Timur</li>
+                <li class="address">Jl. Raya rengel, Kec. Rengel, Kab. Tuban</li>
                 <li class="phone"><a href="tel://23923929210">+62 1011001110010</a></li>
                 <li class="email">emailaddress@domain.com</li>
               </ul>

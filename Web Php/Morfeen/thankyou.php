@@ -86,7 +86,7 @@ if (isset($_POST["cari"]))
             <span class="icon-check_circle display-3 text-success"></span>
             <h2 class="display-3 text-black">Thank you!</h2>
             <p class="lead mb-5">You order was successfuly completed.</p>
-            <p><a href="all.php" class="btn btn-sm height-auto px-4 py-3 btn-primary">Back to shop</a></p>
+            <p><a href="tracking.php" class="btn btn-sm height-auto px-4 py-3 btn-primary">Lanjutkan Transaksi</a></p>
           </div>
         </div>
       </div>
@@ -139,7 +139,7 @@ if (isset($_POST["cari"]))
           <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Tentang Kami :</h3>
               <ul class="list-unstyled">
-                <li class="address">Jl. Swari Selatan No. 07, Sukun, Kota Malang, Jawa Timur</li>
+                <li class="address">Jl. Raya rengel, Kec. Rengel, Kab. Tuban</li>
                 <li class="phone"><a href="tel://23923929210">+62 1011001110010</a></li>
                 <li class="email">emailaddress@domain.com</li>
               </ul>

@@ -159,8 +159,8 @@ foreach ($cart1 as $s)
                       <p><img src="images/bni.png" height="200px" width="200px" alt="Image" class="img-fluid" srcset="">
                       <b>
                       <p class="mb-0">Rekening Bank BNI </p>
-                      <p class="mb-0">Nomor Rekening : 108178191</p>
-                      <p class="mb-0">Atas Nama : HALO </p>
+                      <p class="mb-0">Nomor Rekening : 101001010101</p>
+                      <p class="mb-0">Atas Nama : FERRY </p>
                       </b>
                       </div>
                     </div>
@@ -174,8 +174,8 @@ foreach ($cart1 as $s)
                       <p><img src="images/bca.png" height="200px" width="200px" alt="Image" class="img-fluid" srcset="">
                       <b>
                       <p class="mb-0">Rekening Bank BCA </p>
-                      <p class="mb-0">Nomor Rekening : 762973533</p>
-                      <p class="mb-0">Atas Nama : HEHE </p>
+                      <p class="mb-0">Nomor Rekening : 77777777777</p>
+                      <p class="mb-0">Atas Nama : JULYO </p>
                       </b>
                       </div>
                     </div>
@@ -187,7 +187,7 @@ foreach ($cart1 as $s)
                     <div class="collapse" id="collapsecheque">
                       <div class="py-2">
                         <p class="mb-0">
-                        <a href ="https://api.whatsapp.com/send?phone=6282232629061&text=Halo%20Kak%20ini%20Bukti%20Transfer%20Saya" type="button" class="btn btn-success">Konfirmasi Pembayaran</a>
+                        <a href ="https://api.whatsapp.com/send?phone=6281226341584&text=Chat%20Admin%20Toko%20Material%20Tomat%20" type="button" class="btn btn-success">Konfirmasi Pembayaran</a>
                         </p>
                       </div>
                     </div>
@@ -261,7 +261,7 @@ foreach ($cart1 as $s)
           <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Tentang Kami :</h3>
               <ul class="list-unstyled">
-                <li class="address">Jl. Swari Selatan No. 07, Sukun, Kota Malang, Jawa Timur</li>
+                <li class="address">Jl. Raya rengel, Kec. Rengel, Kab. Tuban</li>
                 <li class="phone"><a href="tel://23923929210">+62 1011001110010</a></li>
                 <li class="email">emailaddress@domain.com</li>
               </ul>

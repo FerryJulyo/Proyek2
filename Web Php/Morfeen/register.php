@@ -84,8 +84,8 @@ if(isset($_POST['register']))
                 <label for="c_country" class="text-black">Daerah : <span class="text-danger">*</span></label>
                 <select name="daerah" class="form-control">
                   <h2>Pilih Daerah :  </h2>
-                  <option value="Kota Malang">Kota Malang</option>    
-                  <option value="Kab. Malang">Kab. Malang</option>    
+                  <option value="Kab. Bojonegoro">Kab. Bojonegoro</option>    
+                  <option value="Kab. Tuban">Kab. Tuban</option>    
                 </select>
                 </div>
                 <div class="form-group row">
@@ -97,13 +97,13 @@ if(isset($_POST['register']))
               <div class="form-group row">
                 <div class="col-md-12">
                   <label for="c_address" class="text-black">Password <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="c_address" name="password" placeholder="Password" required="required">
+                  <input type="password" class="form-control" id="c_address" name="password" placeholder="Password" required="required">
                 </div>
               </div>
               <div class="form-group row">
                 <div class="col-md-12">
                   <label for="c_address" class="text-black">Confirm Password <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="c_address" name="password2" placeholder="Confirm Password" required="required">
+                  <input type="password" class="form-control" id="c_address" name="password2" placeholder="Confirm Password" required="required">
                 </div>
               </div>
               <div class="form-group row">
