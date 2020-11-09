@@ -49,7 +49,7 @@ if(isset($_POST["back"]))
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Morfeen &ndash; Distro & CLothing</title>
+<title>Tomat &ndash; Distro & CLothing</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -95,20 +95,20 @@ if(isset($_POST["back"]))
 				</span>
 
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Nama harus diisi">
-					<span class="label-input100">Jenis</span>
-					<input class="input100" type="text" name="jenis" id="jenis" required value="<?php echo $queryid["jenis"]; ?>">
+					<span class="label-input100">Nama</span>
+					<input class="input100" type="text" name="nama" id="nama" required value="<?php echo $queryid["nama"]; ?>">
 				</div>
 				
 
 				<div class="wrap-input100 validate-input" data-validate = "Alamat harus diisi">
-					<span class="label-input100">Warna</span>
-					<input class="input100" type="text" name="warna" id="warna" required value="<?php echo $queryid["warna"]; ?>">
+					<span class="label-input100">Satuan</span>
+					<input class="input100" type="text" name="satuan" id="satuan" required value="<?php echo $queryid["satuan"]; ?>">
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Nomor Telepon harus diisi">
+				<!-- <div class="wrap-input100 validate-input" data-validate = "Nomor Telepon harus diisi">
 					<span class="label-input100">Size</span>
 					<input class="input100" type="text" name="size" id="size" required value="<?php echo $queryid["size"]; ?>">
-				</div>
+				</div> -->
 
                 <div class="wrap-input100 validate-input" data-validate = "Nomor Telepon harus diisi">
 					<span class="label-input100">Stok Barang</span>

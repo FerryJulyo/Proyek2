@@ -1,6 +1,6 @@
 <?php
     //membuat koneksi
-    $conn=mysqli_connect("localhost","root","","morfeen");
+    $conn=mysqli_connect("localhost","root","","tomat");
 
     //Cek koneksi
     if(!$conn)
@@ -41,16 +41,16 @@
     function tambah($data)
     {
         global $conn;
-        $jenis=htmlspecialchars($data["jenis"]);
-        $warna=htmlspecialchars($data["warna"]);
-        $size=htmlspecialchars($data["size"]);
+        $nama=htmlspecialchars($data["nama"]);
+        $satuan=htmlspecialchars($data["satuan"]);
+        // $size=htmlspecialchars($data["size"]);
         $harga=htmlspecialchars($data["harga"]);
         $gambar=htmlspecialchars($data["gambar"]);
 
     //    var_dump($dat);
 
         $query= "INSERT INTO barang VALUES
-                ('','$jenis','$warna','$size','$harga','$gambar')";
+                ('','$nama','$satuan','$harga','$gambar')";
         mysqli_query($conn,$query);
 
         return mysqli_affected_rows($conn);
@@ -89,17 +89,17 @@
         global $conn;
 
         $id                                 =$data ["id"];
-        $jenis                          	=$data["jenis"];
-        $warna                           	=$data["warna"];
-        $size            					=$data["size"];
+        $nama                          	=$data["nama"];
+        $satuan                           	=$data["satuan"];
+        // $size            					=$data["size"];
         $stok            					=$data["stok"];
         $harga               				=$data["harga"];
         $gambar                         	=$data["g_bj"];
 
         $query="UPDATE barang SET
-            jenis ='$jenis',
-            warna = '$warna',
-            size = '$size',
+            nama ='$nama',
+            satuan = '$satuan',
+            -- size = '$size',
             stok = '$stok',
             harga = '$harga'
             WHERE idbarang = '$id' ";
@@ -112,9 +112,9 @@
     {
         $sql = " SELECT * FROM addcart
                 WHERE
-                jenis LIKE '%$keyword%' OR
-                warna LIKE '%$keyword%' OR
-                size LIKE '%$keyword%' OR
+                nama LIKE '%$keyword%' OR
+                satuan LIKE '%$keyword%' OR
+                -- size LIKE '%$keyword%' OR
                 harga LIKE '%$keyword%' OR
                 gambar LIKE '%$keyword%' ";
         // kembalian ke function query dengan parameter $sql
@@ -126,9 +126,9 @@
     {
         $sql = " SELECT * FROM barang
                 WHERE
-                jenis LIKE '%$keyword%' OR
-                warna LIKE '%$keyword%' OR
-                size LIKE '%$keyword%' OR
+                nama LIKE '%$keyword%' OR
+                satuan LIKE '%$keyword%' OR
+                -- size LIKE '%$keyword%' OR
                 harga LIKE '%$keyword%' OR
                 gambar LIKE '%$keyword%' ";
         // kembalian ke function query dengan parameter $sql
@@ -217,10 +217,10 @@
             return false;
         }
 
-        $jenis_gambar=['jpg', 'jpeg', 'gif', 'png'];
+        $nama_gambar=['jpg', 'jpeg', 'gif', 'png'];
         $pecah_gambar=explode('.', $nama_file);
         $pecah_gambar=strtolower(end($pecah_gambar));
-        if(!in_array($pecah_gambar,$jenis_gambar))
+        if(!in_array($pecah_gambar,$nama_gambar))
         {
             echo "
             <script>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Morfeen Thirteen</title>
+    <title>Tomat Building</title>
 
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaaT26xWeRGbAoPHxaeZQUxk_f7WQ1anw&callback=initMap"
   	type="text/javascript"></script>

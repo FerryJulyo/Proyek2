@@ -33,7 +33,7 @@ foreach ($cart1 as $s)
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Morfeen &ndash; Distro & CLothing</title>
+  <title>Tomat &ndash; Distro & CLothing</title>
     <link rel="icon" href="images/logo.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -74,7 +74,7 @@ foreach ($cart1 as $s)
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a  class="js-logo-clone">Morfeen Thirteen</a>
+              <a  class="js-logo-clone">Tomat Building</a>
             </div>
           </div>
         
@@ -118,9 +118,9 @@ foreach ($cart1 as $s)
                 <thead>
                   <tr>
                     <th class="product-thumbnail">Picture</th>
-                    <th class="product-name">Jenis</th>
-                    <th class="product-name">Warna</th>
-                    <th class="product-name">Size</th>
+                    <th class="product-name">Nama</th>
+                    <th class="product-name">Satuan</th>
+                    <!-- <th class="product-name">Size</th> -->
                     <th class="product-name">Harga Satuan</th>
                     <th class="product-price">Jumlah</th>
                     <th class="product-price">Harga Total</th>
@@ -134,14 +134,14 @@ foreach ($cart1 as $s)
                       <img src="images/<?= $row["gambar"]; ?>" alt="Image" class="img-fluid">
                     </td>
                     <td class="product-name">
-                      <h2 class="h5 text-black"><?= $row["jenis"]; ?></h2>
+                      <h2 class="h5 text-black"><?= $row["nama"]; ?></h2>
                     </td>
                     <td class="product-name">
-                      <h2 class="h5 text-black"><?= $row["warna"]; ?></h2>
+                      <h2 class="h5 text-black"><?= $row["satuan"]; ?></h2>
                     </td>
-                    <td class="product-name">
+                    <!-- <td class="product-name">
                       <h2 class="h5 text-black"><?= $row["size"]; ?></h2>
-                    </td>
+                    </td> -->
                     <td  class="product-name"> 
                     <h2 class="h5 text-black">Rp. <?= $row["hargasatuan"]; ?></h2>
                     </td>
@@ -218,7 +218,7 @@ foreach ($cart1 as $s)
             <h3 class="footer-heading mb-4">Hint</h3>
             <a href="#" class="block-6">
               <img src="images/about_1.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
-              <h3 class="font-weight-light  mb-0">Temukan clothing kesukaan mu di Morfeen</h3>
+              <h3 class="font-weight-light  mb-0">Temukan clothing kesukaan mu di Tomat</h3>
               <p>Build on &mdash; September, 2019</p>
             </a>
           </div>

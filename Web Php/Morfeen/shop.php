@@ -13,7 +13,7 @@ if (isset($_POST["cari"]))
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Morfeen &ndash; Distro & CLothing</title>
+  <title>Tomat &ndash; Distro & CLothing</title>
     <link rel="icon" href="images/logo.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -54,7 +54,7 @@ if (isset($_POST["cari"]))
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="" class="js-logo-clone">Morfeen Thirteen</a>
+              <a href="" class="js-logo-clone">Tomat Building</a>
             </div>
           </div>
         
@@ -89,7 +89,7 @@ if (isset($_POST["cari"]))
           <div class="col-md-6 ml-auto order-md-2 align-self-start">
             <div class="site-block-cover-content">
             <h2 class="sub-title">Shop Now</h2>
-            <h1>Morfeen Thirteen</h1>
+            <h1>Tomat Building</h1>
             <p><a href="shop.php" class="btn btn-black rounded-0">Belanja Sekarang</a></p>
             </div>
           </div>
@@ -121,8 +121,8 @@ if (isset($_POST["cari"]))
             <a href="#" class="product-item md-height bg-gray d-block">
               <img src ="images/<?= $row["gambar"]; ?>" alt="Image" class="img-fluid">
             </a>
-            <h2 class="item-title"><a href="#"> <?=$row["jenis"]; ?> <?=$row["warna"]; ?></a></h2>
-            <h3 class="item-title"><a href="#">Size <?=$row["size"]; ?></a></h3> 
+            <h2 class="item-title"><a href="#"> <?=$row["nama"]; ?> <?=$row["satuan"]; ?></a></h2>
+            <!-- <h3 class="item-title"><a href="#">Size <?=$row["size"]; ?></a></h3>  -->
             <h3 class="item-title"><a href="#">Stok : <?=$row["stok"]; ?></a></h3>
             <strong class="item-price"> <?=$row["harga"]; ?> </strong>
             
@@ -215,7 +215,7 @@ if (isset($_POST["cari"]))
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <h3 class="footer-heading mb-4">Hint</h3>
             <a href="shop.php" class="block-6">
-              <h3 class="font-weight-light  mb-0">Temukan clothing kesukaan mu di Morfeen</h3>
+              <h3 class="font-weight-light  mb-0">Temukan clothing kesukaan mu di Tomat</h3>
               <br>
               <p>Build on &mdash; September, 2019</p>
             </a>

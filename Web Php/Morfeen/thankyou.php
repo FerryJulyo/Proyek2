@@ -12,7 +12,7 @@ if (isset($_POST["cari"]))
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Morfeen &ndash; Distro & CLothing</title>
+  <title>Tomat &ndash; Distro & CLothing</title>
     <link rel="icon" href="images/logo.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -53,7 +53,7 @@ if (isset($_POST["cari"]))
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="" class="js-logo-clone">Morfeen Thirteen</a>
+              <a href="" class="js-logo-clone">Tomat Building</a>
             </div>
           </div>
         

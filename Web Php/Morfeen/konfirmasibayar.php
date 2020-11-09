@@ -9,7 +9,7 @@ $cekout = query("SELECT * FROM cekout ");
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Morfeen &ndash; Distro & CLothing</title>
+  <title>Tomat &ndash; Distro & CLothing</title>
     <link rel="icon" href="images/logo.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -50,7 +50,7 @@ $cekout = query("SELECT * FROM cekout ");
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a class="js-logo-clone">Morfeen Thirteen</a>
+              <a class="js-logo-clone">Tomat Building</a>
             </div>
           </div>
         </div>
@@ -83,9 +83,9 @@ $cekout = query("SELECT * FROM cekout ");
                             <th>Alamat</th>
                             <th>Kode_Pos</th>
                             <th>Picture</th>
-                            <th>Jenis</th>
-                            <th>Warna</th>
-                            <th>Size</th>
+                            <th>Nama</th>
+                            <th>Satuan</th>
+                            <!-- <th>Size</th> -->
                             <th>Tanggal</th>
                             <th>Harga Satuan</th>
                             <th>Jumlah</th>
@@ -105,9 +105,9 @@ $cekout = query("SELECT * FROM cekout ");
                             <td><?= $row["alamat"]; ?></td>
                             <td><?= $row["kodepos"]; ?></td>
                             <td><img src ="images/<?= $row["gambar"]; ?>" height="200px" width="200px"></td>
-                            <td><?= $row["jenis"]; ?></td>
-                            <td><?= $row["warna"]; ?></td>
-                            <td><?= $row["size"]; ?></td>
+                            <td><?= $row["nama"]; ?></td>
+                            <td><?= $row["satuan"]; ?></td>
+                            <!-- <td><?= $row["size"]; ?></td> -->
                             <td><?= $row["tanggal"]; ?></td>
                             <td><?= $row["hargasatuan"]; ?></td>
                             <td><?= $row["jumlah"]; ?></td>

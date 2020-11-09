@@ -32,8 +32,8 @@ foreach ($cart1 as $s)
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Morfeen &ndash; Distro & CLothing</title>
-    <link rel="icon" href="images/logo.png">
+  <title>Tomat &ndash; Distro & CLothing</title>
+    <link rel="icon" href="images/logotomat.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -73,7 +73,7 @@ foreach ($cart1 as $s)
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="" class="js-logo-clone">Morfeen Thirteen</a>
+              <a href="" class="js-logo-clone">Tomat Building</a>
             </div>
           </div>
         
@@ -89,7 +89,7 @@ foreach ($cart1 as $s)
           </div>
           <div class="icons">
             
-            <a href="#" class="icons-btn d-inline-block"><span class="icon-heart-o"></span></a>
+            <!-- <a href="#" class="icons-btn d-inline-block"><span class="icon-heart-o"></span></a> -->
             <a href="cart.php" class="icons-btn d-inline-block bag">
               <span class="icon-shopping-bag"></span>
               <span class="number"><?php echo $popup?></span>
@@ -216,7 +216,7 @@ foreach ($cart1 as $s)
                     <tbody>                     
                       <tr>
                       <td><img height="200px" width="200px" src ="images/<?php echo $o["gambar"]; ?>"></td>
-                        <td> <?php echo $o["jenis"];?> <?php echo $o["warna"];?></td>
+                        <td> <?php echo $o["nama"];?> <?php echo $o["satuan"];?></td>
                         <td><?php echo $o["hargasatuan"];?></td>
                         <td><?php echo $o["jumlah"]; ?></td>
                         <td><?php echo $o["harga"]; ?></td>
@@ -246,8 +246,8 @@ foreach ($cart1 as $s)
           <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <h3 class="footer-heading mb-4">Promo</h3>
             <a href="#" class="block-6">
-              <img src="images/about_1.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
-              <h3 class="font-weight-light  mb-0">Finding Your Perfect Shirts This Summer</h3>
+              <img src="images/marmerempe.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
+              <h3 class="font-weight-light  mb-0">Cari Bahan Material Yang Terbaik</h3>
               <p>Promo from  July 15 &mdash; 25, 2019</p>
             </a>
           </div>
@@ -273,7 +273,7 @@ foreach ($cart1 as $s)
       <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Deny Pratama | All rights reserved
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Pesimis Optimis | All rights reserved
             </p>
           </div>
           

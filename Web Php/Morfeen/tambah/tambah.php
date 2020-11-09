@@ -5,9 +5,9 @@
  if(isset($_POST['submit']))
     {
         //ambil data dari tiap elemen dalam form yang disimpan di variable baru
-        $jenis                          	=($_POST["jenis"]);
-        $warna                           	=($_POST["warna"]);
-		$size            					=($_POST["size"]);
+        $nama                          	=($_POST["nama"]);
+        $satuan                           	=($_POST["satuan"]);
+		// $size            					=($_POST["size"]);
 		$stok 								=($_POST["stok"]);
 		$harga               				=($_POST["harga"]);
         $gambar                         	=($_POST["gambar"]);
@@ -15,7 +15,7 @@
         //query inserrt data
         $query="INSERT INTO barang
                 VALUES
-                ('','$jenis','$warna','$size','$stok','$harga','$gambar')";
+                ('','$nama','$satuan','$stok','$harga','$gambar')";
         mysqli_query($conn,$query);
 
         if(mysqli_affected_rows($conn)>0)
@@ -56,7 +56,7 @@ if(isset($_POST["back"]))
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Morfeen &ndash; Distro & CLothing</title>
+<title>Tomat &ndash; Distro & CLothing</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -105,19 +105,19 @@ if(isset($_POST["back"]))
 				<span class="contact100-form-title"> <div title>TAMBAH DATA BARANG</div>
 				</span>
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Nama harus diisi">
-					<span class="label-input100">Jenis</span>
-					<input class="input100" type="text" name="jenis" required="required" placeholder="Input Jenis">
+					<span class="label-input100">Nama</span>
+					<input class="input100" type="text" name="nama" required="required" placeholder="Input Nama">
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate = "Alamat harus diisi">
-					<span class="label-input100">Warna</span>
-					<input class="input100" type="text" name="warna" required="required" placeholder="Input Warna">
+					<span class="label-input100">satuan</span>
+					<input class="input100" type="text" name="satuan" required="required" placeholder="Input Satuan">
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Nomor Telepon harus diisi">
+				<!-- <div class="wrap-input100 validate-input" data-validate = "Nomor Telepon harus diisi">
 					<span class="label-input100">Size</span>
 					<input class="input100" type="text" name="size" required="required" placeholder="Input Size">
-				</div>
+				</div> -->
 
 				<div class="wrap-input100 validate-input" data-validate = "Nomor Kamar harus diisi">
 					<span class="label-input100">Stok Barang</span>
@@ -166,9 +166,9 @@ if(isset($_POST["back"]))
 			<thead>
 				<tr>
 					<th>No.</th>
-					<th>Jenis</th>
-					<th>Warna</th>
-					<th>Size</th>
+					<th>Nama</th>
+					<th>Satuan</th>
+					<!-- <th>Size</th> -->
 					<th>Stok</th>
 					<th>Harga</th>
 					<th>Gambar</th>
@@ -180,9 +180,9 @@ if(isset($_POST["back"]))
 			<tbody>
 				<tr>
 					<td><?= $i; ?></td>
-					<td><?= $row["jenis"]; ?></td>
-					<td><?= $row["warna"]; ?></td>
-					<td><?= $row["size"]; ?></td>
+					<td><?= $row["nama"]; ?></td>
+					<td><?= $row["satuan"]; ?></td>
+					<!-- <td><?= $row["size"]; ?></td> -->
 					<td><?= $row["stok"]; ?></td>
 					<td>Rp. <?= $row["harga"]; ?></td>
 					<td> <img src ="../images/<?= $row["gambar"]; ?>" alt="Image" class="img-fluid" ></td>
@@ -210,7 +210,7 @@ if(isset($_POST["back"]))
 	</div>
 
 		<span class="contact100-more">
-				Morfeen Thirteen
+				Tomat Building
 		</span>
 	</div>
 	<div id="dropDownSelect1"></div>

@@ -32,7 +32,7 @@ foreach ($cart1 as $s)
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Morfeen &ndash; Distro & CLothing</title>
+  <title>Tomat &ndash; Distro & CLothing</title>
     <link rel="icon" href="images/logo.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -73,7 +73,7 @@ foreach ($cart1 as $s)
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="" class="js-logo-clone">Morfeen Thirteen</a>
+              <a href="" class="js-logo-clone">Tomat Building</a>
             </div>
           </div>
         
@@ -169,7 +169,7 @@ foreach ($cart1 as $s)
                     <?php foreach($cart as $o):?>
                       <tr>
                         <td><img src="images/<?= $o["gambar"]; ?>" height="200px" width="200px"></td>
-                        <td> <?php echo $o["jenis"]; ?> <?php echo $o["warna"]; ?> <strong class="mx-2">x</strong><?php echo $o["jumlah"]; ?></td>
+                        <td> <?php echo $o["nama"]; ?> <?php echo $o["satuan"]; ?> <strong class="mx-2">x</strong><?php echo $o["jumlah"]; ?></td>
                         <td>Rp. <?php echo $o["hargasatuan"];?></td>
                         <td>Rp. <?php echo $o["harga"]; ?></td>
                       </tr>
@@ -306,9 +306,9 @@ if(isset($_POST['order']))
           $nama = $_SESSION["nama"];
           $alamat = $_SESSION["alamat"];
           $kodepos = $_SESSION["kodepos"];
-          $jenis = $f["jenis"];
-          $warna = $f["warna"];
-          $size = $f["size"];
+          $nama = $f["nama"];
+          $satuan = $f["satuan"];
+          // $size = $f["size"];
           $hargasatuan = $f["hargasatuan"];
           $harga = $f["harga"];
           $gambar = $f["gambar"];
@@ -318,7 +318,7 @@ if(isset($_POST['order']))
 
             $query="INSERT INTO cekout
             VALUES
-            ('','$idcus','$idadd','$nama','$alamat','$kodepos','$jenis','$warna','$size','$hargasatuan','$harga','$gambar','$tgl','$jumlah','$status')";
+            ('','$idcus','$idadd','$nama','$alamat','$kodepos','$nama','$satuan','$hargasatuan','$harga','$gambar','$tgl','$jumlah','$status')";
             mysqli_query($conn,$query);
         }
       endforeach;

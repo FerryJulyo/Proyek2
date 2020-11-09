@@ -60,7 +60,7 @@ if(isset($_POST["login"]))
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/logo.png"/>
+	<link rel="icon" type="image/png" href="images/logotomat.png"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -92,7 +92,7 @@ if(isset($_POST["login"]))
 						Login Admin
 					</span>
 					<span class="login100-form-avatar">
-						<img src="images/logo.png" alt="">
+						<img src="images/logotomat.png" alt="">
 					</span>
 
 					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter Username">

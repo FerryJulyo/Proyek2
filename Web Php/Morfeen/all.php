@@ -22,9 +22,9 @@ if(isset($_POST["cart"]))
     foreach ($query1 as $k) 
     {
       $quantity = $_POST["quan"];
-      $jenis = $k["jenis"];
-      $warna = $k["warna"];
-      $size = $k["size"];
+      $nama = $k["nama"];
+      $satuan = $k["satuan"];
+      // $size = $k["size"];
       $hargasatuan = $k["harga"];
       $hargatotal = $quantity * $k["harga"];
       $gambar = $k["gambar"];
@@ -42,7 +42,7 @@ if(isset($_POST["cart"]))
     {
       $query="INSERT INTO addcart
       VALUES
-      ('$id','$idcus','$jenis','$warna','$size','$hargasatuan','$hargatotal','$gambar','$quantity')";
+      ('$id','$idcus','$nama','$satuan','$hargasatuan','$hargatotal','$gambar','$quantity')";
       mysqli_query($conn,$query);
       
       $result = mysqli_query ($conn,"SELECT * FROM addcart WHERE idcus = '$idcus'");
@@ -100,8 +100,8 @@ foreach ($countcek as $ca)
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Morfeen &ndash; Distro & CLothing</title>
-    <link rel="icon" href="images/logo.png">
+    <title>Tomat &ndash; Distro & CLothing</title>
+    <link rel="icon" href="images/logotomat.png">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -137,7 +137,7 @@ foreach ($countcek as $ca)
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a class="js-logo-clone">Morfeen Thirteen</a>
+              <a class="js-logo-clone">Tomat Building</a>
             </div>
           </div>
         
@@ -153,7 +153,7 @@ foreach ($countcek as $ca)
           </div>
           <div class="icons">
             <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
-            <a href="#" class="icons-btn d-inline-block"><span class="icon-heart-o"></span></a>
+            <!-- <a href="#" class="icons-btn d-inline-block"><span class="icon-heart-o"></span></a> -->
             <a href="cart.php" class="icons-btn d-inline-block bag">
               <span class="icon-shopping-bag"></span>
               <span class="number"><?php echo $popup?></span>
@@ -169,13 +169,13 @@ foreach ($countcek as $ca)
         <div class="row">
           <div class="col-md-6 ml-auto order-md-2 align-self-start title-section mb-5 col-12 title-section text-center mb-5 col-12">
             <div class="site-block-cover-content">
-            <h1 class="site-navbar site-menu">ALL Product</h1>
-            <h2>Morfeen Thirteen</h2>
+            <h1 class="site-navbar site-menu"> Product</h1>
+            <h2>Tomat Building</h2>
             <!-- <p><a href="shop.php" class="btn btn-black rounded-0">Belanja Sekarang</a></p> -->
             </div>
           </div>
           <div class="col-md-6 order-1 align-self-end">
-            <img src="images/g1.jpeg" alt="Image" class="img-fluid">
+            <img src="images/intro.jpg" alt="Image" class="img-fluid">
           </div>
         </div>
       </div>
@@ -198,9 +198,9 @@ foreach ($countcek as $ca)
                 <img src ="images/<?= $row["gambar"]; ?>" name="g" alt="Image" class="img-fluid"> 
                 <input type="hidden" name="g" value="<?=$row["gambar"] ;?>">
               </a>
-              <h3 class="item-title" ><?=$row["jenis"]; ?> <input type="hidden" name="j" value="<?=$row["jenis"] ;?>"></h3>
-              <h3 class="item-title" name="w">Warna <?=$row["warna"]; ?> <input type="hidden" name="w" value="<?=$row["warna"] ;?>"></h3> 
-              <h3 class="item-title" name="s">Size <?=$row["size"]; ?> <input type="hidden" name="s" value="<?=$row["size"] ;?>"></h3> 
+              <h3 class="item-title" ><?=$row["nama"]; ?> <input type="hidden" name="j" value="<?=$row["nama"] ;?>"></h3>
+              <h3 class="item-title" name="w">Satuan <?=$row["satuan"]; ?> <input type="hidden" name="w" value="<?=$row["satuan"] ;?>"></h3> 
+              <!-- <h3 class="item-title" name="s">Size <?=$row["size"]; ?> <input type="hidden" name="s" value="<?=$row["size"] ;?>"></h3>  -->
               <h3 class="item-title">Stok : <?=$row["stok"]; ?></h3>
               <strong class="item-price" name="h">Rp. <?=$row["harga"]; ?> <input type="hidden" name="h" value="<?=$row["harga"] ;?>"> </strong>
               
@@ -226,11 +226,11 @@ foreach ($countcek as $ca)
                           </thead>
                           <tbody>
                           <tr>
-                              <td><?=$row["jenis"]; ?> <?=$row["warna"]; ?></td>
+                              <td><?=$row["nama"]; ?> <?=$row["satuan"]; ?></td>
                           </tr>
-                          <tr>
+                          <!-- <tr>
                               <td>Size : <?=$row["size"]; ?></td>
-                          </tr>
+                          </tr> -->
                           <tr>
                               <td>Harga : Rp. <?=$row["harga"]; ?></td>
                           </tr>
@@ -268,9 +268,9 @@ foreach ($countcek as $ca)
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <h3 class="footer-heading mb-4">Hint</h3>
             <a href="shop.php" class="block-6">
-              <h3 class="font-weight-light  mb-0">Temukan clothing kesukaan mu di Morfeen</h3>
+              <h3 class="font-weight-light  mb-0">Temukan Bahan Bangunan di Tomat</h3>
               <br>
-              <p>Build on &mdash; September, 2019</p>
+              <p>Dibuat &mdash; November, 2020</p>
             </a>
           </div>
           <div class="col-lg-5 ml-auto mb-5 mb-lg-0">
@@ -300,9 +300,9 @@ foreach ($countcek as $ca)
           <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Tentang Kami :</h3>
               <ul class="list-unstyled">
-                <li class="address"><a href="api1.php">Jl. Swari Selatan No. 07, Sukun, Kota Malang, Jawa Timur</a></li>
-                <li class="phone"><a href="tel://">+62 81234519822</a></li>
-                <li class="email">morfeen@gmail.com</li>
+                <li class="address"><a href="api1.php">Jl Untung Suropati, Kota Bojonegoro, Jawa Timur</a></li>
+                <li class="phone"><a href="tel://">+62 82338152403</a></li>
+                <li class="email">tokomaterial.kelompokp0@gmail.com</li>
               </ul>
           </div>
         </div>
@@ -312,7 +312,7 @@ foreach ($countcek as $ca)
       <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Deny Pratama | All rights reserved
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Pesimis Optimis | All rights reserved
             </p>
           </div>
           

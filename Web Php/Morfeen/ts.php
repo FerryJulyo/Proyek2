@@ -1,8 +1,8 @@
 
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Morfeen &ndash; Distro & CLothing</title>
+<!-- <html lang="en"> -->
+  <!-- <head> -->
+    <title>Tomat &ndash; Distro & CLothing</title>
     <link rel="icon" href="images/logo.png">
 
     <meta charset="utf-8">
@@ -38,7 +38,7 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="index.php" class="js-logo-clone">Morfeen Thirteen</a>
+              <a href="index.php" class="js-logo-clone">Tomat Building</a>
             </div>
           </div>
         
@@ -81,7 +81,7 @@
           <div class="col-md-6 ml-auto order-md-2 align-self-start title-section mb-5 col-12 title-section text-center mb-5 col-12">
             <div class="site-block-cover-content">
             <h1 class="site-navbar site-menu">T-Shirt</h1>
-            <h2>Morfeen Thirteen</h2>
+            <h2>Tomat Building</h2>
             <p><a href="shop.php" class="btn btn-black rounded-0">Belanja Sekarang</a></p>
             </div>
           </div>
@@ -199,7 +199,7 @@
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <h3 class="footer-heading mb-4">Hint</h3>
             <a href="shop.php" class="block-6">
-              <h3 class="font-weight-light  mb-0">Temukan clothing kesukaan mu di Morfeen</h3>
+              <h3 class="font-weight-light  mb-0">Temukan clothing kesukaan mu di Tomat</h3>
               <br>
               <p>Build on &mdash; September, 2019</p>
             </a>
