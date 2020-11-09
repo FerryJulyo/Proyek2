@@ -100,7 +100,7 @@ foreach ($countcek as $ca)
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Tomat &ndash; Distro & CLothing</title>
+    <title>Tomat &ndash; Toko Material</title>
     <link rel="icon" href="images/logotomat.png">
 
     <meta charset="utf-8">

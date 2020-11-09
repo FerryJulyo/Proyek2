@@ -32,7 +32,7 @@ foreach ($cart1 as $s)
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Tomat &ndash; Distro & CLothing</title>
+  <title>Tomat &ndash; Toko Material</title>
     <link rel="icon" href="images/logotomat.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
