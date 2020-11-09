@@ -94,7 +94,7 @@ if(isset($_POST["back"]))
 				<span class="contact100-form-title"> <div title>Update Data Barang</div>
 				</span>
 
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Nama harus diisi">
+				<div class="wrap-input100 validate-input" data-validate="Nama harus diisi">
 					<span class="label-input100">Nama</span>
 					<input class="input100" type="text" name="nama" id="nama" required value="<?php echo $queryid["nama"]; ?>">
 				</div>

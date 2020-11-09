@@ -94,7 +94,7 @@ if (isset($_POST["cari"]))
             </div>
           </div>
           <div class="col-md-6 order-1 align-self-end">
-            <img src="images/g19.jpeg" alt="Image" class="img-fluid">
+            <img src="images/intro.jpg" alt="Image" class="img-fluid">
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@ if (isset($_POST["cari"]))
       </div>
     </div>
 
-    <div class="site-section">
+    <!-- <div class="site-section">
       <div class="container">
         <div class="row">
           <div class="title-section text-center mb-5 col-12">
@@ -207,7 +207,7 @@ if (isset($_POST["cari"]))
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <footer class="site-footer custom-border-top">
       <div class="container">
@@ -215,9 +215,9 @@ if (isset($_POST["cari"]))
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <h3 class="footer-heading mb-4">Hint</h3>
             <a href="shop.php" class="block-6">
-              <h3 class="font-weight-light  mb-0">Temukan clothing kesukaan mu di Tomat</h3>
+              <h3 class="font-weight-light  mb-0">Temukan material pilihan mu di Tomat</h3>
               <br>
-              <p>Build on &mdash; September, 2019</p>
+              <p>Build on &mdash; November 2020</p>
             </a>
           </div>
           <div class="col-lg-5 ml-auto mb-5 mb-lg-0">
@@ -259,7 +259,7 @@ if (isset($_POST["cari"]))
       <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Deny Pratama | All rights reserved
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Pesimis Optimis | All rights reserved
             </p>
           </div>
           

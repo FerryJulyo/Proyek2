@@ -43,7 +43,6 @@
         global $conn;
         $nama=htmlspecialchars($data["nama"]);
         $satuan=htmlspecialchars($data["satuan"]);
-        // $size=htmlspecialchars($data["size"]);
         $harga=htmlspecialchars($data["harga"]);
         $gambar=htmlspecialchars($data["gambar"]);
 
@@ -89,9 +88,8 @@
         global $conn;
 
         $id                                 =$data ["id"];
-        $nama                          	=$data["nama"];
+        $nama                          	    =$data["nama"];
         $satuan                           	=$data["satuan"];
-        // $size            					=$data["size"];
         $stok            					=$data["stok"];
         $harga               				=$data["harga"];
         $gambar                         	=$data["g_bj"];
@@ -99,7 +97,6 @@
         $query="UPDATE barang SET
             nama ='$nama',
             satuan = '$satuan',
-            -- size = '$size',
             stok = '$stok',
             harga = '$harga'
             WHERE idbarang = '$id' ";
@@ -114,7 +111,6 @@
                 WHERE
                 nama LIKE '%$keyword%' OR
                 satuan LIKE '%$keyword%' OR
-                -- size LIKE '%$keyword%' OR
                 harga LIKE '%$keyword%' OR
                 gambar LIKE '%$keyword%' ";
         // kembalian ke function query dengan parameter $sql
@@ -128,7 +124,6 @@
                 WHERE
                 nama LIKE '%$keyword%' OR
                 satuan LIKE '%$keyword%' OR
-                -- size LIKE '%$keyword%' OR
                 harga LIKE '%$keyword%' OR
                 gambar LIKE '%$keyword%' ";
         // kembalian ke function query dengan parameter $sql

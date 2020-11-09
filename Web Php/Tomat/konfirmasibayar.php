@@ -80,12 +80,8 @@ $cekout = query("SELECT * FROM cekout ");
                             <th>ID_CekOut</th>
                             <th>ID_Customer</th>
                             <th>Nama</th>
-                            <th>Alamat</th>
-                            <th>Kode_Pos</th>
                             <th>Picture</th>
-                            <th>Nama</th>
                             <th>Satuan</th>
-                            <!-- <th>Size</th> -->
                             <th>Tanggal</th>
                             <th>Harga Satuan</th>
                             <th>Jumlah</th>
@@ -102,12 +98,8 @@ $cekout = query("SELECT * FROM cekout ");
                             <td><?= $row["idcek"]; ?></td>
                             <td><?= $row["idcus"]; ?></td>
                             <td><?= $row["nama"]; ?></td>
-                            <td><?= $row["alamat"]; ?></td>
-                            <td><?= $row["kodepos"]; ?></td>
                             <td><img src ="images/<?= $row["gambar"]; ?>" height="200px" width="200px"></td>
-                            <td><?= $row["nama"]; ?></td>
                             <td><?= $row["satuan"]; ?></td>
-                            <!-- <td><?= $row["size"]; ?></td> -->
                             <td><?= $row["tanggal"]; ?></td>
                             <td><?= $row["hargasatuan"]; ?></td>
                             <td><?= $row["jumlah"]; ?></td>
@@ -129,47 +121,6 @@ $cekout = query("SELECT * FROM cekout ");
       </div>
     </div>
     </form>
-    
-
-
-    <footer class="site-footer custom-border-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-            <h3 class="footer-heading mb-4">Promo</h3>
-            <a href="#" class="block-6">
-              <img src="images/about_1.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
-              <h3 class="font-weight-light  mb-0">Finding Your Perfect Shirts This Summer</h3>
-              <p>Promo from  July 15 &mdash; 25, 2019</p>
-            </a>
-          </div>
-          <div class="col-lg-5 ml-auto mb-5 mb-lg-0">
-            <div class="row">
-            </div>
-          </div>
-          
-          <div class="col-md-6 col-lg-3">
-          <div class="block-5 mb-5">
-              <h3 class="footer-heading mb-4">Tentang Kami :</h3>
-              <ul class="list-unstyled">
-                <li class="address">Jl. Swari Selatan No. 07, Sukun, Kota Malang, Jawa Timur</li>
-                <li class="phone"><a href="tel://23923929210">+62 1011001110010</a></li>
-                <li class="email">emailaddress@domain.com</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <p>
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Deny Pratama | All rights reserved
-            </p>
-          </div>
-          
-        </div>
-    </footer>
   </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>

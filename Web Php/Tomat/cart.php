@@ -120,7 +120,6 @@ foreach ($cart1 as $s)
                     <th class="product-thumbnail">Picture</th>
                     <th class="product-name">Nama</th>
                     <th class="product-name">Satuan</th>
-                    <!-- <th class="product-name">Size</th> -->
                     <th class="product-name">Harga Satuan</th>
                     <th class="product-price">Jumlah</th>
                     <th class="product-price">Harga Total</th>

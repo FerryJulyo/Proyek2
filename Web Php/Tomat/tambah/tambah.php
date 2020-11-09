@@ -104,12 +104,12 @@ if(isset($_POST["back"]))
 				<br><br>
 				<span class="contact100-form-title"> <div title>TAMBAH DATA BARANG</div>
 				</span>
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Nama harus diisi">
+				<div class="wrap-input100 validate-input" data-validate="Nama harus diisi">
 					<span class="label-input100">Nama</span>
 					<input class="input100" type="text" name="nama" required="required" placeholder="Input Nama">
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Alamat harus diisi">
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Alamat harus diisi">
 					<span class="label-input100">satuan</span>
 					<input class="input100" type="text" name="satuan" required="required" placeholder="Input Satuan">
 				</div>
@@ -119,7 +119,7 @@ if(isset($_POST["back"]))
 					<input class="input100" type="text" name="size" required="required" placeholder="Input Size">
 				</div> -->
 
-				<div class="wrap-input100 validate-input" data-validate = "Nomor Kamar harus diisi">
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Nomor Kamar harus diisi">
 					<span class="label-input100">Stok Barang</span>
 					<input class="input100" type="text" name="stok" required="required" placeholder="Input Harga">
                 </div>
