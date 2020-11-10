@@ -199,7 +199,7 @@
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <h3 class="footer-heading mb-4">Hint</h3>
             <a href="shop.php" class="block-6">
-              <h3 class="font-weight-light  mb-0">Temukan clothing kesukaan mu di Tomat</h3>
+              <h3 class="font-weight-light  mb-0">Temukan Material kesukaan mu di Tomat</h3>
               <br>
               <p>Build on &mdash; September, 2019</p>
             </a>
@@ -231,7 +231,7 @@
           <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Tentang Kami :</h3>
               <ul class="list-unstyled">
-                <li class="address"><a href="api1.php">Jl. Swari Selatan No. 07, Sukun, Kota Malang, Jawa Timur</a></li>
+                <li class="address"><a href="api1.php">Jl. Raya Rengel, Kec Rengel, Kab. Tuban</a></li>
                 <li class="phone"><a href="tel://">+62 1011001110010</a></li>
                 <li class="email">emailaddress@domain.com</li>
               </ul>
@@ -243,7 +243,7 @@
       <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Deny Pratama | All rights reserved
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Optimis Pesimis | All rights reserved
             </p>
           </div>
           
