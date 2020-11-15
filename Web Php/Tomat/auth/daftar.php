@@ -108,7 +108,11 @@ if(isset($_POST["daftar"]))
 	<div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
+<<<<<<< HEAD
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Pesimis Optimis | All rights reserved
+=======
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Tomat | All rights reserved
+>>>>>>> e1006547a958974b4f9111bd6eb510cd4a5e192a
             </p>
           </div>
           
