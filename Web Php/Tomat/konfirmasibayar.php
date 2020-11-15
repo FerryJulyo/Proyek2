@@ -10,7 +10,7 @@ $cekout = query("SELECT * FROM cekout ");
 <html lang="en">
   <head>
   <title>Tomat &ndash; Toko Material</title>
-    <link rel="icon" href="images/logo.png">
+    <link rel="icon" href="images/logotomat.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -81,6 +81,7 @@ $cekout = query("SELECT * FROM cekout ");
                             <th>ID_Customer</th>
                             <th>Nama</th>
                             <th>Picture</th>
+                            <th>Alamat</th>
                             <th>Satuan</th>
                             <th>Tanggal</th>
                             <th>Harga Satuan</th>
@@ -99,6 +100,7 @@ $cekout = query("SELECT * FROM cekout ");
                             <td><?= $row["idcus"]; ?></td>
                             <td><?= $row["nama"]; ?></td>
                             <td><img src ="images/<?= $row["gambar"]; ?>" height="200px" width="200px"></td>
+                            <td><?= $row["alamat"]; ?></td>
                             <td><?= $row["satuan"]; ?></td>
                             <td><?= $row["tanggal"]; ?></td>
                             <td><?= $row["hargasatuan"]; ?></td>

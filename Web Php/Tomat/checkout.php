@@ -114,11 +114,11 @@ foreach ($cart1 as $s)
           <div class="col-md-6 mb-5 mb-md-0">
             <h2 class="h3 mb-3 text-black"></h2>
             <div class="p-3 p-lg-5 border">
-              <div class="form-group ">
+              <!-- <div class="form-group ">
                 <label for="c_country" class="text-black">Daerah </label>
                 <h3><?php echo $_SESSION["daerah"] ?></h3>
                 </div>
-              <div class="form-group row">
+              <div class="form-group row"> -->
                 <div class="col-md-12">
                   <label for="c_fname" class="text-black">Nama </label>
                   <h3><?php echo $_SESSION["nama"] ?></h3>
@@ -138,11 +138,13 @@ foreach ($cart1 as $s)
                 </div>
               </div>
 
+
               <div class="form-group row mb-5">
                 <div class="col-md-6">
                   <label for="c_email_address" class="text-black">Email </label>
                   <h3><?php echo $_SESSION["email"] ?></h3>
                 </div>
+                
 			  </div>
 			  <div class="form-group row mb-5">
                 <div class="col-md-6">
@@ -320,7 +322,7 @@ if(isset($_POST['order']))
 
             $query="INSERT INTO cekout
             VALUES
-            ('','$idcus','$idadd','$nama','$alamat','$kodepos','$nama','$satuan','$hargasatuan','$harga','$gambar','$tgl','$jumlah','$status')";
+            ('','$idcus','$idadd','$nama','$alamat','$nama','$satuan','$hargasatuan','$harga','$gambar','$tgl','$jumlah','$status')";
             mysqli_query($conn,$query);
         }
       endforeach;
