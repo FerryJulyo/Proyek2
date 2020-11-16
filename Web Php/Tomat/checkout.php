@@ -160,12 +160,14 @@ foreach ($cart1 as $s)
             <br><br>
             <div class="row mb-5">
               <div class="col-md-12">
-                <h2 class="h3 mb-3 text-black">Your Order</h2>
+                <h2 class="h3 mb-3 text-black" >__Your Order__</h2>
                 <div class="p-3 p-lg-5 border">
                   <table class="table site-block-order-table mb-5">
                     <thead>
                       <th>Picture</th>
                       <th>Product</th>
+					  <th>Satuan</th>
+					  <th>Jumlah</th>
                       <th>Harga Satuan</th>
                       <th>Total</th>
                     </thead>
@@ -173,7 +175,9 @@ foreach ($cart1 as $s)
                     <?php foreach($cart as $o):?>
                       <tr>
                         <td><img src="images/<?= $o["gambar"]; ?>" height="200px" width="200px"></td>
-                        <td> <?php echo $o["nama"]; ?> <?php echo $o["satuan"]; ?> <strong class="mx-2">x</strong><?php echo $o["jumlah"]; ?></td>
+                        <td> <?php echo $o["nama"]; ?> </td>
+						<td><?php echo $o["satuan"]; ?></td> 
+						<td><?php echo $o["jumlah"]; ?></td>
                         <td>Rp. <?php echo $o["hargasatuan"];?></td>
                         <td>Rp. <?php echo $o["harga"]; ?></td>
                       </tr>
@@ -250,8 +254,8 @@ foreach ($cart1 as $s)
             <h3 class="footer-heading mb-4">Promo</h3>
             <a href="#" class="block-6">
               <img src="images/about_1.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
-              <h3 class="font-weight-light  mb-0">Finding Your Perfect Shirts This Summer</h3>
-              <p>Promo from  July 15 &mdash; 25, 2019</p>
+              <h3 class="font-weight-light  mb-0">Temukan Material terbaik di Tomat</h3>
+              <p>November, 2020</p>
             </a>
           </div>
           <div class="col-lg-5 ml-auto mb-5 mb-lg-0">
@@ -273,7 +277,7 @@ foreach ($cart1 as $s)
       <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Deny Pratama | All rights reserved
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Pesimis Optimis | All rights reserved
             </p>
           </div>
           
@@ -310,9 +314,8 @@ if(isset($_POST['order']))
           $nama = $_SESSION["nama"];
           $alamat = $_SESSION["alamat"];
           $kodepos = $_SESSION["kodepos"];
-          $nama = $f["nama"];
+          $material = $f["nama"];
           $satuan = $f["satuan"];
-          // $size = $f["size"];
           $hargasatuan = $f["hargasatuan"];
           $harga = $f["harga"];
           $gambar = $f["gambar"];
@@ -322,7 +325,7 @@ if(isset($_POST['order']))
 
             $query="INSERT INTO cekout
             VALUES
-            ('','$idcus','$idadd','$nama','$alamat','$nama','$satuan','$hargasatuan','$harga','$gambar','$tgl','$jumlah','$status')";
+            ('','$idcus','$idadd','$nama','$alamat','$material','$satuan','$hargasatuan','$harga','$gambar','$tgl','$jumlah','$status')";
             mysqli_query($conn,$query);
         }
       endforeach;

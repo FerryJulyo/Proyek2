@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 10, 2020 at 12:04 AM
+-- Generation Time: Nov 16, 2020 at 07:05 PM
 -- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.11
+-- PHP Version: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -78,9 +78,9 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`idbarang`, `nama`, `satuan`, `stok`, `harga`, `gambar`) VALUES
-(77, 'Semen', 'karung', '20', 50000, 'semen.jpg'),
-(78, 'Keramik Ikema', 'Pcs', '150', 10, 'keramikikema.jpg'),
-(79, 'Batu Bata Merah', 'Pcs', '500', 2000, 'batubata.jpg'),
+(77, 'Semen', 'karung', '5', 50000, 'semen.jpg'),
+(78, 'Keramik Ikema', 'Pcs', '140', 10, 'keramikikema.jpg'),
+(79, 'Batu Bata Merah', 'Pcs', '390', 2000, 'batubata.jpg'),
 (80, 'Marmer ', 'Pcs', '199', 200000, 'marmerempe.jpg'),
 (81, 'Cat Nippon Paint Spotless Aquamarine', 'bak', '48', 180000, 'nippon paint aquamarine.jpg');
 
@@ -94,12 +94,10 @@ CREATE TABLE `cekout` (
   `idcek` int(11) NOT NULL,
   `idcus` int(11) NOT NULL,
   `idbarang` int(11) NOT NULL,
-  `nama` varchar(20) NOT NULL,
+  `nama` varchar(50) NOT NULL,
   `alamat` varchar(50) NOT NULL,
-  `kodepos` varchar(20) NOT NULL,
-  `jenis` varchar(20) NOT NULL,
-  `warna` varchar(20) NOT NULL,
-  `size` varchar(20) NOT NULL,
+  `material` varchar(20) NOT NULL,
+  `satuan` varchar(20) NOT NULL,
   `hargasatuan` int(11) NOT NULL,
   `harga` int(11) NOT NULL,
   `gambar` varchar(20) NOT NULL,
@@ -112,10 +110,8 @@ CREATE TABLE `cekout` (
 -- Dumping data for table `cekout`
 --
 
-INSERT INTO `cekout` (`idcek`, `idcus`, `idbarang`, `nama`, `alamat`, `kodepos`, `jenis`, `warna`, `size`, `hargasatuan`, `harga`, `gambar`, `tanggal`, `jumlah`, `status`) VALUES
-(99, 28, 60, 'Deny Pratama', 'Jl. Bunga Anggrek no. 5', '65145', 'Hoodie', 'Hitam', 'M', 295000, 590000, 'g6.jpeg', '2020-11-09 13:47:54', 2, 'Confirmed'),
-(100, 28, 62, 'Deny Pratama', 'Jl. Bunga Anggrek no. 5', '65145', 'Hoodie', 'Putih', 'XL', 295000, 885000, 'g3.jpeg', '2020-11-09 22:51:46', 3, 'Confirmed'),
-(101, 27, 59, 'hh', 'Jl. sembarang', '65145', 'Hoodie', 'Hitam', 'XL', 295000, 2360000, 'g1.jpeg', '2020-11-09 22:51:53', 8, 'Confirmed');
+INSERT INTO `cekout` (`idcek`, `idcus`, `idbarang`, `nama`, `alamat`, `material`, `satuan`, `hargasatuan`, `harga`, `gambar`, `tanggal`, `jumlah`, `status`) VALUES
+(106, 34, 77, 'Julyo', 'Tuban', 'Semen', 'karung', 50000, 250000, 'semen.jpg', '2020-11-16 18:00:10', 5, 'Ordered');
 
 -- --------------------------------------------------------
 
@@ -132,8 +128,8 @@ CREATE TABLE `customer` (
   `password` varchar(20) NOT NULL,
   `password2` varchar(20) NOT NULL,
   `kodepos` int(20) DEFAULT NULL,
-  `email` varchar(20) NOT NULL,
-  `notelp` int(20) DEFAULT NULL
+  `email` varchar(50) NOT NULL,
+  `notelp` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -141,10 +137,9 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`idcus`, `nama`, `alamat`, `daerah`, `username`, `password`, `password2`, `kodepos`, `email`, `notelp`) VALUES
-(27, 'hh', 'Jl. sembarang', 'Kab. Malang', 'h', 'h', 'h', 65145, 'h@gmail', 2147483647),
-(28, 'Deny Pratama', 'Jl. Bunga Anggrek no. 5', 'Kota Malang', 'deny', 'y', 'y', 65145, 'deny@gmail.com', 2147483647),
-(29, 'hafid ali rahman wibisana', 'bojonegoro', 'Kota Malang', 'hafid', 'hafid', 'hafid', 62181, 'hafidwibisana29@gmai', 2147483647),
-(30, 'Jono S', 'Bojonegoro', 'Kab. Bojonegoro', 'jon_o', 'jono', 'jono', 62162, 'jonos@mail.com', 2147483647);
+(29, 'hafid ali rahman wibisana', 'bojonegoro', 'Kota Malang', 'hafid', 'hafid', 'hafid', 62181, 'hafidwibisana29@gmai', '2147483647'),
+(33, 'Ferry Julyo', 'Tuban', 'Kab. Tuban', 'ferry', 'julyo', 'julyo', 62370, 'ferryjulyo86@gmail.com', '082232848979'),
+(34, 'Julyo', 'Tuban', 'Kab. Tuban', 'julyo', 'julyo', 'julyo', 62370, 'julyo@gmail.com', '082232848979');
 
 -- --------------------------------------------------------
 
@@ -156,12 +151,10 @@ CREATE TABLE `history` (
   `idhis` int(11) NOT NULL,
   `idcus` int(11) NOT NULL,
   `idbarang` int(11) NOT NULL,
-  `nama` varchar(20) NOT NULL,
+  `nama` varchar(50) NOT NULL,
   `alamat` varchar(50) NOT NULL,
+  `material` varchar(20) NOT NULL,
   `kodepos` int(11) NOT NULL,
-  `jenis` varchar(20) NOT NULL,
-  `warna` varchar(20) NOT NULL,
-  `size` varchar(20) NOT NULL,
   `harga` int(11) NOT NULL,
   `gambar` varchar(20) NOT NULL,
   `tanggal` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -204,6 +197,12 @@ ALTER TABLE `customer`
   ADD PRIMARY KEY (`idcus`);
 
 --
+-- Indexes for table `history`
+--
+ALTER TABLE `history`
+  ADD PRIMARY KEY (`idhis`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -229,13 +228,19 @@ ALTER TABLE `barang`
 -- AUTO_INCREMENT for table `cekout`
 --
 ALTER TABLE `cekout`
-  MODIFY `idcek` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
+  MODIFY `idcek` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
 
 --
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `idcus` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `idcus` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+
+--
+-- AUTO_INCREMENT for table `history`
+--
+ALTER TABLE `history`
+  MODIFY `idhis` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

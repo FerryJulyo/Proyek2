@@ -217,8 +217,8 @@ foreach ($cart1 as $s)
             <h3 class="footer-heading mb-4">Hint</h3>
             <a href="#" class="block-6">
               <img src="images/about_1.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
-              <h3 class="font-weight-light  mb-0">Temukan clothing kesukaan mu di Tomat</h3>
-              <p>Build on &mdash; September, 2019</p>
+              <h3 class="font-weight-light  mb-0">Temukan material terbaik di Tomat</h3>
+              <p>November, 2020</p>
             </a>
           </div>
           <!-- <div class="col-lg-5 ml-auto mb-5 mb-lg-0">
@@ -270,7 +270,7 @@ foreach ($cart1 as $s)
       <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Deny Pratama | All rights reserved
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Pesimis Optimis | All rights reserved
             </p>
           </div>
           

@@ -206,6 +206,7 @@ foreach ($cart1 as $s)
                     <thead>
                       <th>Picture</th>
                       <th>Product</th>
+					  <th>Satuan</th>
                       <th>Harga_Satuan</th>
                       <th>Jumlah</th>
                       <th>Harga_Total</th>
@@ -215,11 +216,12 @@ foreach ($cart1 as $s)
                     </thead>
                     <tbody>                     
                       <tr>
-                      <td><img height="200px" width="200px" src ="images/<?php echo $o["gambar"]; ?>"></td>
-                        <td> <?php echo $o["nama"];?> <?php echo $o["satuan"];?></td>
-                        <td><?php echo $o["hargasatuan"];?></td>
+                      <td><img height="100px" width="100px" src ="images/<?php echo $o["gambar"]; ?>"></td>
+                        <td> <?php echo $o["material"];?></td>
+						<td><?php echo $o["satuan"];?></td>
+                        <td>Rp.<?php echo $o["hargasatuan"];?></td>
                         <td><?php echo $o["jumlah"]; ?></td>
-                        <td><?php echo $o["harga"]; ?></td>
+                        <td>Rp.<?php echo $o["harga"]; ?></td>
                         <td><b><?php echo $o["status"];?></b></td>
                         <td><?php echo $o["tanggal"];?></td>  
                         <td>
@@ -248,7 +250,7 @@ foreach ($cart1 as $s)
             <a href="#" class="block-6">
               <img src="images/marmerempe.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
               <h3 class="font-weight-light  mb-0">Cari Bahan Material Yang Terbaik</h3>
-              <p>Promo from  July 15 &mdash; 25, 2019</p>
+              <p>November 2020</p>
             </a>
           </div>
           <div class="col-lg-5 ml-auto mb-5 mb-lg-0">
