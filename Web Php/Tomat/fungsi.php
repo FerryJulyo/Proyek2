@@ -86,6 +86,7 @@
     function edit($data)
     {
         global $conn;
+        ini_set("display_errors", "off");
 
         $id                                 =$data ["id"];
         $nama                          	    =$data["nama"];

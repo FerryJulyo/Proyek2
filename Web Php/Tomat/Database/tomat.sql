@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 16, 2020 at 07:05 PM
+-- Generation Time: Nov 19, 2020 at 04:55 AM
 -- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.9
+-- PHP Version: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -78,11 +78,19 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`idbarang`, `nama`, `satuan`, `stok`, `harga`, `gambar`) VALUES
-(77, 'Semen', 'karung', '5', 50000, 'semen.jpg'),
-(78, 'Keramik Ikema', 'Pcs', '140', 10, 'keramikikema.jpg'),
-(79, 'Batu Bata Merah', 'Pcs', '390', 2000, 'batubata.jpg'),
+(77, 'Semen', 'karung', '200', 50000, 'semen.jpg'),
+(78, 'Keramik Ikema', 'Pcs', '135', 58000, 'keramikikema.jpg'),
+(79, 'Batu Bata Merah', 'Pcs', '370', 1000, 'batubata.jpg'),
 (80, 'Marmer ', 'Pcs', '199', 200000, 'marmerempe.jpg'),
-(81, 'Cat Nippon Paint Spotless Aquamarine', 'bak', '48', 180000, 'nippon paint aquamarine.jpg');
+(81, 'Cat Nippon Paint Spotless Aquamarine', 'bak', '48', 180000, 'nippon paint aquamarine.jpg'),
+(82, 'Batako', 'Pcs', '400', 1800, 'batako.jpg'),
+(83, 'Bata Ringan', 'm³', '100', 575000, 'bata ringan.jpg'),
+(84, 'Tripleks 3 mm', 'Lembar', '50', 60000, 'teriplek.jpg'),
+(85, 'Tripleks 4 mm', 'Lembar', '50', 70000, 'teriplek.jpg'),
+(86, 'Tripleks 6 mm', 'Lembar', '50', 90000, 'teriplek.jpg'),
+(87, 'Tripleks 8 mm', 'Lembar', '50', 120000, 'teriplek.jpg'),
+(88, 'Tripleks 12 mm', 'Lembar', '50', 140000, 'teriplek.jpg'),
+(89, 'Tripleks 15 mm', 'Lembar', '50', 170000, 'teriplek.jpg');
 
 -- --------------------------------------------------------
 
@@ -111,7 +119,9 @@ CREATE TABLE `cekout` (
 --
 
 INSERT INTO `cekout` (`idcek`, `idcus`, `idbarang`, `nama`, `alamat`, `material`, `satuan`, `hargasatuan`, `harga`, `gambar`, `tanggal`, `jumlah`, `status`) VALUES
-(106, 34, 77, 'Julyo', 'Tuban', 'Semen', 'karung', 50000, 250000, 'semen.jpg', '2020-11-16 18:00:10', 5, 'Ordered');
+(106, 34, 77, 'Julyo', 'Tuban', 'Semen', 'karung', 50000, 250000, 'semen.jpg', '2020-11-16 18:00:10', 5, 'Ordered'),
+(107, 35, 78, 'Pandu Dwi Laksono', 'Bojonegoro', 'Keramik Ikema', 'Pcs', 10, 50, 'keramikikema.jpg', '2020-11-16 22:25:36', 5, 'Pesanan Selesai'),
+(108, 35, 79, 'Pandu Dwi Laksono', 'Bojonegoro', 'Batu Bata Merah', 'Pcs', 2000, 40000, 'batubata.jpg', '2020-11-16 22:25:42', 20, 'Pesanan Selesai');
 
 -- --------------------------------------------------------
 
@@ -139,7 +149,8 @@ CREATE TABLE `customer` (
 INSERT INTO `customer` (`idcus`, `nama`, `alamat`, `daerah`, `username`, `password`, `password2`, `kodepos`, `email`, `notelp`) VALUES
 (29, 'hafid ali rahman wibisana', 'bojonegoro', 'Kota Malang', 'hafid', 'hafid', 'hafid', 62181, 'hafidwibisana29@gmai', '2147483647'),
 (33, 'Ferry Julyo', 'Tuban', 'Kab. Tuban', 'ferry', 'julyo', 'julyo', 62370, 'ferryjulyo86@gmail.com', '082232848979'),
-(34, 'Julyo', 'Tuban', 'Kab. Tuban', 'julyo', 'julyo', 'julyo', 62370, 'julyo@gmail.com', '082232848979');
+(34, 'Julyo', 'Tuban', 'Kab. Tuban', 'julyo', 'julyo', 'julyo', 62370, 'julyo@gmail.com', '082232848979'),
+(35, 'Pandu Dwi Laksono', 'Bojonegoro', 'Kab. Bojonegoro', 'pandu', 'pandu1', 'pandu1', 62162, 'pandu@mail.co', '083843865644');
 
 -- --------------------------------------------------------
 
@@ -222,19 +233,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `idbarang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
+  MODIFY `idbarang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
 
 --
 -- AUTO_INCREMENT for table `cekout`
 --
 ALTER TABLE `cekout`
-  MODIFY `idcek` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
+  MODIFY `idcek` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
 
 --
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `idcus` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `idcus` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `history`
